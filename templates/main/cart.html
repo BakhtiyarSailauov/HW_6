@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Корзина</title>
+</head>
+<body>
+    <a href="/profile">Профиль</a>
+    <a href="/flowers">Каталог</a>
+    <h2>Список покупок</h2>
+    <ul>
+        {% for flower in cart_flowers %}
+        <li>ID: {{ flower.id }} - Название: {{ flower.name }} - Цена: {{ flower.cost }}</li>
+        {% endfor %}
+    </ul>
+    <h2>Итог: {{ total_price }}</h2>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>User: {{ user.id }}</title>
+  </head>
+  <body>
+    <a href="/flowers">Каталог</a>
+    <a href="/cart/items">Корзина</a>
+    <h1>Пользователь: {{user.full_name}}</h1>
+    <ul>
+        <li>ID: {{ user.id }}</li>
+        <li>ФИО: {{ user.full_name }}</li>
+        <li>Email: {{ user.email }}</li>
+    </ul>
+  </body>
+</html>
